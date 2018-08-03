@@ -1,0 +1,245 @@
+body {
+    display:grid;
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    font-family: 'Abel', sans-serif;
+    /*font-family: 'Ranga', cursive;*/
+
+}
+a{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
+#sideNav{
+    background-color: #ffcd00;
+	display:grid;
+	grid-row-start:1;
+	grid-row-end:3;
+	grid-column-start:1;
+	grid-column-end:2;
+    grid-template-rows: 150px 67.81px 67.81px 67.81px 200px;
+	/* overflow: hidden; */
+	min-width: 288px;
+	/*border-right-style:inset;*/
+}
+#sideNav h2{
+    color:white;
+}
+
+.pictures{
+    grid-row-start:5;
+    grid-row-end:6;
+    padding-top:100px;
+}
+#howardlogo1{
+    width:273.19;
+}
+
+#signOut{
+    display:flex;
+    padding-top:100px;
+    justify-content:center;
+    grid-row-start:6;
+    grid-row-end:7;
+    color: white;
+ /*   justify-content:center;*/
+}
+#copyright{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+    background-color:#ADADAD;
+    color:white;
+    text-align:center;
+    margin-top:-40px;
+}
+
+#home{
+    height:150px;
+    width:273.19px;
+}
+
+#profilebutton{
+    display: flex;
+    grid-row-start:2;
+	grid-row-end:3;
+	justify-content:center;
+}
+#profilebutton :hover{
+    background-color:rgb(112,112,114);
+}
+#listingsbutton{
+    /*background-color:black;*/
+    display: flex;
+    grid-row-start:3;
+	grid-row-end:4;
+	justify-content: center;
+	/*border-bottom-style: inset;*/
+}
+#listingsbutton :hover{
+    background-color: rgb(112, 112, 114);
+}
+#viewlisting{
+    display: flex;
+    grid-row-start:4;
+    grid-row-end:5;
+    justify-content: center;
+    /*border-bottom-style: inset;*/
+}
+#viewlisting:hover{
+    background-color: rgb(112, 112, 114);
+}
+#logo{
+	height: 100%;
+	/*position: absolute;*/
+}
+
+
+.main{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#fff;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+    height: 100vh;
+    width: calc(100vw - 250px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow-y: scroll;
+    
+}
+/*#profileContent{*/
+/*    display:grid;*/
+/*    grid-row-start:1;*/
+/*    grid-row-end:2;*/
+    /*width: 100%;*/
+/*    width: calc(100vh - 300px);*/
+/*}*/
+
+.profileContent {
+    width: calc(100vw - 350px);
+
+}
+
+#displaypic{
+    display:flex;
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    justify-content:center;
+}
+
+#displaypic1{
+    display:flex;
+    justify-content:center;
+}
+
+#displaypic2{
+    width:300;
+    height:300;
+}
+
+#form{
+    display:grid;
+    /*align-self: flex-start;*/
+        /*padding-left: 100px;*/
+}
+
+.button{
+    background:transparent;
+    border: none;
+    color: white;
+    cursor:pointer;
+    overflow:hidden;
+    font-size: 20px;
+}
+#copyright{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+/*Forming positioning*/
+#descrip_input{
+    /*background-image:url('images/descriptionIcon.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 10px 10px;*/
+    /*background-size: 40px;*/
+   
+    width: 100%;
+    height:200px;
+    resize:none;
+    padding: 12px 20px;
+    box-sizing:border-box;
+    border:none;
+    border-bottom: 2px solid #ffcd00;
+    outline: none !important;
+}
+/*.input_boxes{*/
+/*    width: 500px;*/
+/*    border-radius:;*/
+/*}*/
+#small_boxes{
+    font-size: 40px;
+}
+#descrip_box{
+    font-size:40px;
+}
+.input_boxes{
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid #ffcd00;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.input_boxes[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.input_boxes[type=text]:focus {
+    width: 90%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none !important;
+}
+#phoneNumber_input{
+    border:none;
+    border-bottom:2px solid #ffcd00;
+    font-size: 25px;
+}
+#phoneNumber_input[type=text]{
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none !important;
+}
+#phoneNumber_input[type=text]:focus{
+    width:70%;
+    outline: none !important;
+}
+#descrip_input {
+    font-size: 25px;
+}
+
+#submit{
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #ffcd00;
+    color: white;
+    border: 2px solid #ffcd00;
+    width: 300px;
+    height: 50px;
+}
+#submit:hover{
+    background-color:#fff;
+    color: #ffcd00;
+}

@@ -1,0 +1,88 @@
+<head>
+        <!--FIREBASE-->
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDv2GYirztQDGBB_u0L2ScGBl6aTB8UyA4",
+    authDomain: "phresh-37a6b.firebaseapp.com",
+    databaseURL: "https://phresh-37a6b.firebaseio.com",
+    projectId: "phresh-37a6b",
+    storageBucket: "phresh-37a6b.appspot.com",
+    messagingSenderId: "134748980253"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <!--FONT-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Gaegu');
+      html {
+        height: 100%;
+        overflow-y: hidden;
+      }
+      body {
+        height: 100%;
+      }
+    </style>
+    <Title>Create Profile</Title>
+    <link rel="stylesheet" href="createprofile.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+</head>
+
+<body>
+    <div id='sideNav'>
+      <div id='home'>
+        <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
+      </div>
+      <div id='navigation'>
+        <div id="profilebutton">
+          <a href='createprofile.html'><h2>Profile</h2></a>
+        </div>
+        <div id="listingsbutton">
+          <a href='createlisting.html'><h2>Create Listing</h2></a>
+        </div>
+        <div id='viewListing'>
+          <a href='viewlisting.html'><h2>View Listings</h2></a>
+        </div>
+      </div>
+      
+      <div class="pictures">
+        <img src="images/howardlogo1.png" id="howardlogo1"/>
+    <!--    <img src="images/howardlogo2.png" id="howardlogo2"/>-->
+      </div>
+      <div id='signOut'>
+        <button class='button' id='signOutButton'>Sign Out</button>
+      </div>
+    </div>
+    
+    <div class='main'>
+      <div class='profileContent'>
+        <!--<img src="https://i.pinimg.com/originals/29/40/50/294050821a3d0229a6ccf18ba883b434.jpg"></img>-->
+        <div id='displaypic1'>
+          <button id='displaypic'><img id='displaypic2' src="images/profileicon.png" /></button>
+        </div>
+        <div id='form'>
+          <div id="small_boxes">
+            <p>Name: <input type="text" id="name_input" class='input_boxes'/></p>
+            <p>Phone Number: <input id="phoneNumber_input" type='text'/></p>
+            <p>Dorm: <input type="text" id='dorm_input' class='input_boxes'/></p>
+          </div>
+          <div id="descrip_box">
+          <p>Description: <input type="text" id='descrip_input' /></p>
+          </div>
+          <div id="save_box">
+          <input type="submit" value="Save" id='submit'/>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id='copyright'>
+        <p>&copy; Phresh 2018</p>
+      </div>      
+    <script type="text/javascript" src="firebase.js"></script>
+    <script type="text/javascript" src="createprofile.js"></script>
+
+    <!--<script type="text/javascript" src="script.js"></script>-->
+</body>

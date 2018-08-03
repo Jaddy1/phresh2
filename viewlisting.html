@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <!--FIREBASE-->
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDv2GYirztQDGBB_u0L2ScGBl6aTB8UyA4",
+      authDomain: "phresh-37a6b.firebaseapp.com",
+      databaseURL: "https://phresh-37a6b.firebaseio.com",
+      projectId: "phresh-37a6b",
+      storageBucket: "phresh-37a6b.appspot.com",
+      messagingSenderId: "134748980253"
+    };
+    firebase.initializeApp(config);
+      </script>
+      <link rel="stylesheet" href="viewlisting.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Gaegu');
+      html {
+        height: 100%;
+        overflow-y: hidden;
+      }
+      body {
+        height: 100%;
+      }
+    </style>
+    </head>
+    <body onload='presentListingsOnPage()'>
+      <div id='sideNav'>
+        <div id='home'>
+          <a href='index.html'><img id='logo' src="images/Phresh-2.png"></img></a>
+        </div>
+        <div id='navigation'>
+        <div id="profilebutton">
+          <a href='createprofile.html'><h2>Profile</h2></a>
+        </div>
+        <div id="listingsbutton">
+          <a href='createlisting.html'><h2>Create Listing</h2></a>
+        </div>
+        <div id='viewListing'>
+          <a href='viewlisting.html'><h2>View Listings</h2></a>
+        </div>
+      </div>
+      <div class="pictures">
+        <img src="images/howardlogo1.png" id="howardlogo1"/>
+    <!--    <img src="images/howardlogo2.png" id="howardlogo2"/>-->
+      </div>
+      <div id='signOut'>
+        <button class='button' id='signOutButton'>Sign Out</button>
+      </div>
+      </div>
+      <!--</div>-->
+        
+      <div class='main'>
+        <h1>Current Listings</h1>
+          <div id="viewListingBox"></div>
+          
+      </div>
+        
+      <div id='copyright'>
+        <p>&copy; Phresh 2018</p>
+      </div>
+      <script src="firebase.js"></script>
+      <script type="text/javascript" src="viewlisting.js"></script>
+    </body>
+</html>    
+    

@@ -1,0 +1,229 @@
+body {
+    display:grid;
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+    min-width: 100vh;
+    height:100vh;
+    margin:0;
+    font-family: 'Abel', sans-serif;
+}
+a{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
+
+#sideNav{
+    background-color: #ffcd00;
+	display:grid;
+	grid-row-start:1;
+	grid-row-end:3;
+	grid-column-start:1;
+	grid-column-end:2;
+    grid-template-rows: 150px 67.81px 67.81px 67.81px 200px;
+	overflow: hidden;
+	/*border-right-style:inset;*/
+
+}
+#sideNav h2{
+    color:white;
+}
+.pictures{
+    grid-row-start:5;
+    grid-row-end:6;
+    padding-top:100px;
+}
+
+#howardlogo1{
+    width:273.19;
+}
+#home{
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+#navigation{
+    grid-row-start:2;
+    grid-row-end:3;
+}
+#signOut{
+    display:flex;
+    padding-top:100px;
+    justify-content:center;
+    grid-row-start:6;
+    grid-row-end:7;
+    color: white;
+ /*   justify-content:center;*/
+}
+
+.main{
+    background-image:url('images/dirty-Room.png');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    height:100vh;
+    
+}
+#createListing{
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+#dateTime{
+    grid-row-start:3;
+    grid-row-end:3;
+}
+#description{
+    grid-row-start:3;
+    grid-row-end:4;
+}
+#listingContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end:2;
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+}
+#copyright{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+    background-color:#ADADAD;/*#212121*/
+    color: white;
+    text-align: center;
+    margin-top: -40px;
+}
+
+#name{
+    display:grid;
+    grid-row-start:1;
+    grid-row-end:2;
+    /*border-bottom-style: inset;*/
+}
+
+#profilebutton{
+    display:flex;
+    grid-row-start:2;
+	grid-row-end:3;
+	justify-content:center;
+	/*border-bottom-style: inset;*/
+}
+#profilebutton :hover{
+    background-color:rgb(112,112,114);
+}
+#listingsbutton{
+    /*background-color:black;*/
+    display:flex;
+    grid-row-start:3;
+	grid-row-end:4;
+	justify-content:center;
+	/*border-bottom-style: inset;*/
+}
+#listingsbutton :hover{
+    background-color: rgb(112, 112, 114);
+}
+#viewlisting{
+    display:flex;
+    grid-row-start:4;
+    grid-row-end:5;
+    justify-content:center;
+    /*border-bottom-style: inset;*/
+}
+#viewlisting :hover{
+    background-color: rgb(112, 112, 114);
+}
+#logo{
+	height: 100%;
+}
+
+input:focus{
+    border: 3px solid #2E1114;
+}
+button{
+    
+}
+#createListing {
+    height: 250px;
+    width: 250px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#createListing:hover {
+    background: #ccc;
+}
+.button{
+    background:transparent;
+    border: none;
+    color: white;
+    cursor:pointer;
+    overflow:hidden;
+    font-size: 20px;
+}
+
+/*form positioning*/
+
+#all_inputs{
+    font-size:20px;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    height:300px;
+}
+
+#nameDorm, #dateTime{
+    display:flex;
+    align-items:center;
+    /*justify-content:stretch;*/
+}
+
+#submit_listing {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    background: #FFCD00;
+    color: white;
+}
+
+#submit_listing:hover {
+    color: #FFCD00;
+    background: white;
+    border: solid 1px #FFCD00;
+}
+
+#all_inputs input {
+    height:20px;
+    font-size:20px;
+    flex: 1;
+    margin-left: 5px;
+    /*border:none;*/
+    /*border-bottom: 2px solid #ffcd00;*/
+}
+
+.margin{
+    margin-right:10px;
+}
+
+#dateTime_listing{
+    font-size:100%;
+}
+#name_listing, #dorm_listing, #dateTime_listing {
+    height:30px !important;
+}
+
+#description_listing{
+    margin-top:-15px;
+    width:921px;
+    height:200px!important;
+}

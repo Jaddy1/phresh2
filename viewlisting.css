@@ -1,0 +1,149 @@
+body {
+    display:grid;
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+    height: 100vh;
+    min-width: 100vh;
+    margin:0;
+    font-family: 'Abel', sans-serif;
+    /*font-family: 'Ranga', cursive;*/
+
+}
+a{
+    color:black;
+}
+a:link{
+    text-decoration: none;
+}
+#sideNav{
+    background-color: #ffcd00;
+	display:grid;
+	grid-row-start:1;
+	grid-row-end:3;
+	grid-column-start:1;
+	grid-column-end:2;
+    grid-template-rows: 150px 67.81px 67.81px 67.81px 200px;
+	overflow: hidden;
+	/*border-right-style:inset;*/
+
+}
+#sideNav h2{
+    color:white;
+}
+.pictures{
+    grid-row-start:5;
+    grid-row-end:6;
+    padding-top:100px;
+}
+#home{
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+#navigation{
+    grid-row-start:2;
+    grid-row-end:3;
+}
+#signOut{
+    display:flex;
+    padding-top:100px;
+    justify-content:center;
+    grid-row-start:6;
+    grid-row-end:7;
+    color: white;
+ /*   justify-content:center;*/
+}
+#howardlogo1{
+    width:273.19;
+}
+
+.main{
+    background-image:url('images/hudorm2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:2;
+    grid-column-end:3;
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+#copyright{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:3;
+    background-color:#ADADAD;/*#212121*/
+    color: white;
+    text-align: center;
+    margin-top: -40px;
+}
+
+
+#profilebutton{
+    display: flex;
+    grid-row-start:2;
+	grid-row-end:3;
+	justify-content:center;
+}
+#profilebutton :hover{
+    background-color:rgb(112,112,114);
+}
+#listingsbutton{
+    /*background-color:black;*/
+    display: flex;
+    grid-row-start:3;
+	grid-row-end:4;
+	justify-content: center;
+	/*border-bottom-style: inset;*/
+}
+#listingsbutton :hover{
+    background-color: rgb(112, 112, 114);
+}
+#viewlisting{
+    display: flex;
+    grid-row-start:4;
+    grid-row-end:5;
+    justify-content: center;
+    /*border-bottom-style: inset;*/
+}
+#viewlisting :hover{
+    background-color: rgb(112, 112, 114);
+}
+#logo{
+	height: 100%;
+}
+.button{
+    background:transparent;
+    border: none;
+    color: white;
+    cursor:pointer;
+    overflow:hidden;
+    font-size: 20px;
+}
+
+#viewListingBox{
+    display:flex;
+}
+.listing_data{
+    flex:1;
+    border: solid black 1px;
+    border-radius:25px;
+    margin: 10px;
+    background-color: #ADADAD;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.listing_data :hover{
+    background-color:#4f4f4f;
+}
+#copyright{
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:2;
+    grid-column-end:3;
+}
