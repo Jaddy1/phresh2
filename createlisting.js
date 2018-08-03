@@ -60,3 +60,9 @@
 //       console.log(err)
 //     })
 // }
+let submitListing = document.querySelector('#submit_listing')
+let main = document.querySelector('#main')
+
+submitListing.addEventListener('click', e=>{
+  main.innerHTML += `<h1>Listing Added!</h1>`
+})

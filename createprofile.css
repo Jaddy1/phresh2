@@ -23,9 +23,9 @@ a:link{
 	grid-column-start:1;
 	grid-column-end:2;
     grid-template-rows: 150px 67.81px 67.81px 67.81px 200px;
-	/* overflow: hidden; */
+	 overflow-y: scroll; 
+	height: 100vh;
 	min-width: 288px;
-	/*border-right-style:inset;*/
 }
 #sideNav h2{
     color:white;
@@ -42,7 +42,7 @@ a:link{
 
 #signOut{
     display:flex;
-    padding-top:100px;
+    /*padding-top:100px;*/
     justify-content:center;
     grid-row-start:6;
     grid-row-end:7;
@@ -127,7 +127,10 @@ a:link{
 
 .profileContent {
     width: calc(100vw - 350px);
-
+    display: flex;
+    flex-direction: column;
+    padding-top: 400px;
+    padding-bottom: 50px;
 }
 
 #displaypic{
@@ -207,7 +210,7 @@ a:link{
     transition: width 0.4s ease-in-out;
 }
 .input_boxes[type=text]:focus {
-    width: 90%;
+    width: 85%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     outline: none !important;
@@ -241,5 +244,6 @@ a:link{
 }
 #submit:hover{
     background-color:#fff;
-    color: #ffcd00;
+    color: #ffcd00
+    ;
 }

@@ -61,35 +61,15 @@ a:link{
     background-image:url('images/dirty-Room.png');
     background-size: cover;
     background-repeat: no-repeat;    
-    
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 3fr;
-    height:100vh;
-    
-}
-#createListing{
-    grid-row-start:1;
-    grid-row-end:2;
-}
-
-#dateTime{
-    grid-row-start:3;
-    grid-row-end:3;
-}
-#description{
-    grid-row-start:3;
-    grid-row-end:4;
-}
-#listingContent{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-row-start: 1;
-    grid-row-end:2;
-    /*margin-left:auto;*/
-    /*margin-right:auto;*/
+    height:100vh;
+    padding-top: 50px;
+    
 }
+
 #copyright{
     grid-row-start:2;
     grid-row-end:3;
@@ -99,13 +79,6 @@ a:link{
     color: white;
     text-align: center;
     margin-top: -40px;
-}
-
-#name{
-    display:grid;
-    grid-row-start:1;
-    grid-row-end:2;
-    /*border-bottom-style: inset;*/
 }
 
 #profilebutton{
@@ -149,15 +122,8 @@ input:focus{
 button{
     
 }
-#createListing {
-    height: 250px;
-    width: 250px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#createListing:hover {
-    background: #ccc;
+#createListing{
+    margin-top:-400px;
 }
 .button{
     background:transparent;
@@ -172,12 +138,10 @@ button{
 
 #all_inputs{
     font-size:20px;
-    width:80%;
-    margin:0 auto;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
-    height:300px;
+    
+    /*height*/
 }
 
 #nameDorm, #dateTime{
@@ -186,10 +150,15 @@ button{
     /*justify-content:stretch;*/
 }
 
+#nameDorm, #dateTime, #description{
+    /*margin: 50px 0px;*/
+}
+
 #submit_listing {
     width: 60%;
-    margin: 0 auto;
-    padding: 5px 10px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-left: 5px 10px;
     font-size: 20px;
     border-radius: 4px;
     background: #FFCD00;
@@ -222,6 +191,9 @@ button{
     height:30px !important;
 }
 
+#description{
+    height:240px!important;
+}
 #description_listing{
     margin-top:-15px;
     width:921px;
